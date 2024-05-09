@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2024-04-03T15:57:33.486060448Z",
-  "chain_id": "SLC",
+  "genesis_time": "2024-05-09T18:11:47.248563181Z",
+  "chain_id": "slc_1111-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -33,39 +33,24 @@
       },
       "accounts": [
         {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "swapland1stsg7pwu0npjfxxv5qzed8tqwqw2v3x8uck6q5",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
+          "@type": "/slc.types.v1.EthAccount",
+          "base_account": {
+            "address": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
         },
         {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "swapland168agz2m806j0nh6kedk9s6jdl98zu99qavnuz5",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "swapland12t5t6cnae46dgwwth6evpm7lk0pq9hl33yy2mk",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "swapland1fuc2m4m4wf87qa3n9zdnq8sw38lxd7qu42lvge",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "swapland1hlrsk5nj8mhl29qzcwqj6zg2ak6yttarql2we3",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
+          "@type": "/slc.types.v1.EthAccount",
+          "base_account": {
+            "address": "swapland1d3z8vggrxgq86dhtl2plr79nzvfmkkug55u8yc",
+            "pub_key": null,
+            "account_number": "1",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
         }
       ]
     },
@@ -79,75 +64,31 @@
       },
       "balances": [
         {
-          "address": "swapland1stsg7pwu0npjfxxv5qzed8tqwqw2v3x8uck6q5",
+          "address": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk",
           "coins": [
             {
               "denom": "spl",
-              "amount": "1000000000000000000000000"
+              "amount": "100000000000000000000000000"
             }
           ]
         },
         {
-          "address": "swapland168agz2m806j0nh6kedk9s6jdl98zu99qavnuz5",
+          "address": "swapland1d3z8vggrxgq86dhtl2plr79nzvfmkkug55u8yc",
           "coins": [
             {
               "denom": "spl",
-              "amount": "1000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "swapland12t5t6cnae46dgwwth6evpm7lk0pq9hl33yy2mk",
-          "coins": [
-            {
-              "denom": "spl",
-              "amount": "1000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "swapland1fuc2m4m4wf87qa3n9zdnq8sw38lxd7qu42lvge",
-          "coins": [
-            {
-              "denom": "spl",
-              "amount": "1000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "swapland1hlrsk5nj8mhl29qzcwqj6zg2ak6yttarql2we3",
-          "coins": [
-            {
-              "denom": "spl",
-              "amount": "1000000000000000000000000000"
+              "amount": "100000000000000000000000000"
             }
           ]
         }
       ],
-      "supply": [],
-      "denom_metadata": [
+      "supply": [
         {
-          "description": "The native staking token of the SwapLandChain",
-          "denom_units": [
-            {
-              "denom": "spl",
-              "exponent": 0,
-              "aliases": []
-            },
-            {
-              "denom": "mspl",
-              "exponent": 18,
-              "aliases": []
-            }
-          ],
-          "base": "spl",
-          "display": "mspl",
-          "name": "SwapLandChain",
-          "symbol": "mspl",
-          "uri": "",
-          "uri_hash": ""
+          "denom": "spl",
+          "amount": "200000000000000000000000000"
         }
       ],
+      "denom_metadata": [],
       "send_enabled": []
     },
     "capability": {
@@ -157,7 +98,7 @@
     "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "spl",
+        "denom": "stake",
         "amount": "1000"
       }
     },
@@ -180,8 +121,55 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
+    "erc20": {
+      "params": {
+        "enable_erc20": true,
+        "enable_evm_hook": true
+      },
+      "token_pairs": []
+    },
     "evidence": {
       "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "aevmos",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": [
+          "3855"
+        ],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": false,
+        "active_precompiles": [
+          "0x0000000000000000000000000000000000000100",
+          "0x0000000000000000000000000000000000000400",
+          "0x0000000000000000000000000000000000000800",
+          "0x0000000000000000000000000000000000000801",
+          "0x0000000000000000000000000000000000000804"
+        ]
+      }
     },
     "exchange": {
       "params": {
@@ -192,6 +180,18 @@
     "feegrant": {
       "allowances": []
     },
+    "feemarket": {
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000",
+        "min_gas_price": "0.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      },
+      "block_gas": "0"
+    },
     "genutil": {
       "gen_txs": [
         {
@@ -200,7 +200,7 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "node2",
+                  "moniker": "my_validator",
                   "identity": "",
                   "website": "",
                   "security_contact": "",
@@ -212,19 +212,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "swapland168agz2m806j0nh6kedk9s6jdl98zu99qavnuz5",
-                "validator_address": "swaplandvaloper168agz2m806j0nh6kedk9s6jdl98zu99qtdpn8x",
+                "delegator_address": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk",
+                "validator_address": "swaplandvaloper1vucqgwc67744jgmc54ayjkfaft70d9k3m60vyy",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "4VZWnVmdsXXbLoOoh1m3Cys6Rl9d7GXIcABd1PuxEc0="
+                  "key": "MBqZktOB+bKTGRBbV7Qb2ffEWBfdQjfbVoFaExEDCJk="
                 },
                 "value": {
                   "denom": "spl",
-                  "amount": "100000000000000000000"
+                  "amount": "1000000000000000000000"
                 }
               }
             ],
-            "memo": "5ebd7766192a47e308a6b1f8ac0b704023b82173@144.76.102.71:26656",
+            "memo": "86a5cf4d7b9c3daa328b6ee8bbd9ba1e9386a976@144.76.102.71:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -233,8 +233,8 @@
             "signer_infos": [
               {
                 "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AwhMmRO2wvu6hJrJQOHhOx48xNIP170k90q6ibZ8iCP4"
+                  "@type": "/slc.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "A2xWMyE6RiGODd6yFLAOEVbLET9LUf1b5Yikvm6OtV3F"
                 },
                 "mode_info": {
                   "single": {
@@ -253,7 +253,7 @@
             "tip": null
           },
           "signatures": [
-            "3ou8bcvbCf9tXyx/rbSn0ngrzr+TXfBbJgVNwLR9RHlkItHlQ2J3Bk7u2AsrFnov8VullzwDXbkTnnNTKWTMJg=="
+            "4xpf38s+VXuQCvQ20GZyVY2iOwxHMBo+yWHqw1ivEpopKZtRw+Zdi3e5ms56x1i/P9d52FkveH2e4id0aDhqJQE="
           ]
         },
         {
@@ -262,7 +262,7 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "node1",
+                  "moniker": "my_validator",
                   "identity": "",
                   "website": "",
                   "security_contact": "",
@@ -274,19 +274,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "swapland1stsg7pwu0npjfxxv5qzed8tqwqw2v3x8uck6q5",
-                "validator_address": "swaplandvaloper1stsg7pwu0npjfxxv5qzed8tqwqw2v3x82ey49x",
+                "delegator_address": "swapland1d3z8vggrxgq86dhtl2plr79nzvfmkkug55u8yc",
+                "validator_address": "swaplandvaloper1d3z8vggrxgq86dhtl2plr79nzvfmkkugz4wgp2",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "AkWOXpXl+jS2zYqk3nB6BiMYrIfIM6EgmFD0Ik1kp2Q="
+                  "key": "11XamTVnvOEC2t3zRs8q0VHFLXyBNHAxEpdUDXE4Gsk="
                 },
                 "value": {
                   "denom": "spl",
-                  "amount": "100000000000000000000"
+                  "amount": "1000000000000000000000"
                 }
               }
             ],
-            "memo": "c9c11d64c80034d30521e61e290cdfbe33a0bc10@135.181.245.48:26656",
+            "memo": "9f9d7d44782984c2e12a8649a1bfda72c535fc93@135.181.245.48:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -295,8 +295,8 @@
             "signer_infos": [
               {
                 "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Ao64PeNwwxnM86hAgJU4AMgjDL3+cNYwJYKfXW8JEzZS"
+                  "@type": "/slc.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "ArnpgYXCIquMh3tByWpQNGRLPFGVA/qt8TEqjZ/QrIKx"
                 },
                 "mode_info": {
                   "single": {
@@ -315,7 +315,7 @@
             "tip": null
           },
           "signatures": [
-            "eCrh+l5ImBN10ByHj5of74qw3AMiSHX22iJFrzSDjuhz5MVIDHjA3dzlsf8JJ3krmA2lX16vfBwe7KEb9Ax9Cg=="
+            "5XOPd9zCMGtskUPaKAUYJQHbZQCv+ew1jJaxg0tG3eATGJaOxzrpUYVHwGKgqKtbQvkL/LnDZlAxyx58y6fmugA="
           ]
         }
       ]
@@ -331,7 +331,7 @@
       "params": {
         "min_deposit": [
           {
-            "denom": "spl",
+            "denom": "stake",
             "amount": "10000000"
           }
         ],
@@ -362,7 +362,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "spl",
+        "mint_denom": "stake",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -408,7 +408,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "spl",
+        "bond_denom": "stake",
         "min_commission_rate": "0.000000000000000000"
       },
       "last_total_power": "0",
