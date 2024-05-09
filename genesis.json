@@ -98,7 +98,7 @@
     "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "spl",
         "amount": "1000"
       }
     },
@@ -174,7 +174,7 @@
     "exchange": {
       "params": {
         "SpotTradingIsEnabled": true,
-        "Admin": "swapland1hlrsk5nj8mhl29qzcwqj6zg2ak6yttarql2we3"
+        "Admin": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk"
       }
     },
     "feegrant": {
@@ -331,7 +331,7 @@
       "params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "spl",
             "amount": "10000000"
           }
         ],
@@ -362,7 +362,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "stake",
+        "mint_denom": "spl",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -382,13 +382,13 @@
       "params": {
         "PerpTradingIsEnabled": false
       },
-      "admin": "swapland1hlrsk5nj8mhl29qzcwqj6zg2ak6yttarql2we3"
+      "admin": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk"
     },
     "relayer": {
       "params": {
         "RelayerPoolAmount": "100000000000000000000",
         "SlashingAmount": "100000",
-        "Admin": "swapland1hlrsk5nj8mhl29qzcwqj6zg2ak6yttarql2we3"
+        "Admin": "swapland1vucqgwc67744jgmc54ayjkfaft70d9k3dmarpk"
       }
     },
     "slashing": {
@@ -408,7 +408,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "stake",
+        "bond_denom": "spl",
         "min_commission_rate": "0.000000000000000000"
       },
       "last_total_power": "0",
